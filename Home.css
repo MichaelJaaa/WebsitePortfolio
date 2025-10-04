@@ -1,0 +1,442 @@
+*{
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: auto;
+
+    background-color: #121212 ;
+    font-family: 'Montserrat', sans-serif;
+    color: #EAEAEA ;
+}
+
+header{
+    display: flex;
+} 
+.profile{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+    padding: .7% 0% .7% 4%;
+    border: 1px solid #dc143c;
+    font-size: 1.5rem;
+    font-weight: 700;
+} 
+
+#profile-username1{
+    color: #FF2400;
+}
+#profile-username2{
+    color: #EAEAEA;
+}
+/*----------------------------------------MENU----------------------------------------*/
+.menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    background: #111;     /* dark header bar */
+    padding: .7% 4% .7% 0%;
+    border: 1px solid #ccc;
+}
+
+.menu-nav-ulist {
+    display: flex;        /* horizontal list */
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    gap: 20px;            /* spacing between items */
+    
+}
+
+.menu-nav-list a {
+    text-decoration: none;
+    color: #EAEAEA;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-nav-list a:hover {
+    color: #e69172  ;       /* highlight color on hover */
+    /*text-decoration: underline 2px;*/
+}
+
+#menu-list1{
+    color: #FF2400 ;
+}
+/*----------------------------------------MENU----------------------------------------*/
+/*----------------------------------------CONTAINER----------------------------------------*/
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    height: auto;
+    margin: 0 auto;            /* <-- This centers the container itself */
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    margin-top: 5%;
+}
+
+.profile-container img{
+    width: 70%;
+    height: 70%;
+    max-width: 100%;
+    max-height: 100%;
+    
+    border-radius: 50%;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    
+    width: 50%;
+    height: auto;
+    font-size: 1rem;
+}
+
+.personal-info{
+    
+}
+
+.info-container h1{
+    font-weight: 700;
+    font-size: 5rem;
+    color: #EAEAEA;
+}
+
+#personal-name{
+    color: #ff4500;
+    filter: drop-shadow(0 0 4px #FF4500) 
+}
+
+.info-container h2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #EAEAEA;
+}
+
+#personal-work{
+    color: #ff4500;
+}
+
+/*#line {
+    border: none;
+    padding: 0;
+    height: .25rem;
+    width: 38rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #EAEAEA; /* Scarlet highlight */
+/*}*/
+
+.social-media{
+    display: flex;
+    
+}
+
+.SocMed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin: .5rem .2rem;
+    border-top: 1rem;
+    border-radius: 50%;
+    border: 2px solid #ff4500;
+
+    cursor: pointer;
+}
+
+.SocMed-container:hover {
+    filter: drop-shadow(0 0 6px #FF4500) 
+            drop-shadow(0 0 12px #FF4500) 
+            drop-shadow(0 0 20px #FF4500);
+    animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.SocMed{
+    width: 60%;
+    height: 60%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(94%) saturate(1882%) hue-rotate(7deg) brightness(103%) contrast(105%);
+}
+
+
+#connect-p{
+    color: #9A9A9A;
+    font-size: .8rem;
+}
+
+#connect-email{
+    color: #EAEAEA;
+    font-size: 1rem;
+}
+
+.Divider {
+    width: 100%;             /* full width */
+    overflow: hidden;        /* hide text when outside */
+    white-space: nowrap;     /* keep text in one line */
+    box-sizing: border-box;
+    opacity: .2;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.Divider h1 {
+    display: inline-block;
+    font-size: 15rem;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 100%;     
+    animation: scroll-left 10s linear infinite;
+}
+
+/*----------------------------------------CONTAINER----------------------------------------*/
+
+/*----------------------------------------@KEYFRAMES----------------------------------------*/
+
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 3px #FF4500) drop-shadow(0 0 6px #FF4500);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #FF4500) drop-shadow(0 0 20px #FF4500);
+    }
+    100% {
+        filter: drop-shadow(0 0 3px #FF4500) drop-shadow(0 0 6px #FF4500);
+    }
+}
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* move fully left */
+    }
+}
+/*----------------------------------------@KEYFRAMES----------------------------------------*/
+
+/*----------------------------------------@MEDIA----------------------------------------*/
+@media (max-width: 1400px) {
+    .profile{
+        padding: .7% 0% .7% 2%;
+        font-size: 1.5rem;
+    }
+    .menu {
+        padding: .7% 2% .7% 0%;
+    }
+    .info-container h1{
+        font-size: 3.5rem;
+    }
+
+    #personal-name{
+        filter: drop-shadow(0 0 3px #FF4500) 
+    }
+
+    .info-container h2{
+        font-size: 2.1rem;
+    }
+    #connect-p{
+        font-size: .64rem;
+    }
+
+    #connect-email{
+        font-size: .8rem;
+    }
+
+    .Divider h1{
+        font-size: 12rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .profile{
+        padding: .7% 0% .7% 2%;
+        font-size: 1.5rem;
+    } 
+
+    .menu {
+        padding: .7% 2% .7% 0%;
+    }
+
+    .menu-nav-ulist {
+        gap: 15px;            /* spacing between items */
+        
+    }
+
+    .menu-nav-list a {
+        font-size: 0.8rem;
+    }
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+    }
+
+    .profile-container img {
+        width: 39%;               /* optional: scale image smaller on mobile */
+        height: auto;
+    }
+    
+    .profile-container,
+    .info-container {
+        width: 100%;              /* take full width when stacked */
+        margin-top: 20px;         /* add spacing between them */
+        text-align: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .info-container h1{
+        font-size: 4.5rem;
+    }
+
+    #personal-name{
+        filter: drop-shadow(0 0 3px #FF4500) 
+    }
+
+    .info-container h2{
+        font-size: 3.875rem;
+    }
+    
+    .SocMed-container{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #connect-p{
+        font-size: .64rem;
+    }
+
+    #connect-email{
+        font-size: .8rem;
+    }
+
+    .Divider h1{
+        font-size: 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile{
+        width: 50%;
+        padding: .7% 5%;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .content-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-container img {
+        width: 50%;               /* optional: scale image smaller on mobile */
+        height: auto;
+    }
+    
+    .profile-container,
+    .info-container {
+        width: 100%;              /* take full width when stacked */
+        margin-top: 20px;         /* add spacing between them */
+        text-align: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .info-container h1{
+        font-size: 4rem;
+    }
+
+    #personal-name{
+        filter: drop-shadow(0 0 3px #FF4500) 
+    }
+
+    .info-container h2{
+        font-size: 2.4rem;
+    }
+    
+    .SocMed-container{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    #connect-p{
+        font-size: .64rem;
+    }
+
+    #connect-email{
+        font-size: .8rem;
+    }
+    .Divider h1{
+        font-size: 8rem;
+    }
+}
+
+    
+
+@media (max-width: 480px) {
+    .content-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-container img {
+        width: 50%;               /* optional: scale image smaller on mobile */
+        height: auto;
+    }
+    
+    .profile-container,
+    .info-container {
+        width: 100%;              /* take full width when stacked */
+        margin-top: 20px;         /* add spacing between them */
+        text-align: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .info-container h1{
+        font-size: 2.2rem;
+    }
+
+    #personal-name{
+        filter: drop-shadow(0 0 2px #FF4500) 
+    }
+
+    .info-container h2{
+        font-size: 1.6rem;
+    }
+
+    .SocMed-container{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    #connect-p{
+        font-size: .50rem;
+    }
+
+    #connect-email{
+        font-size: .65rem;
+    }
+    
+    .Divider h1{
+        font-size: 6rem;
+    }
+}
