@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    height: auto;
+    height: 100vh;
 
     background-color: #121212 ;
     font-family: 'Montserrat', sans-serif;
@@ -53,7 +53,6 @@ header{
     width: 50%;
     background: #111;          /* dark header bar */
     padding: 0.7% 4% 0.7% 0%;
-    border: 1px solid #ccc;
 }
 
 .menu-nav-ulist {
@@ -77,10 +76,8 @@ header{
     color: #e69172;            /* highlight color on hover */
 }
 
-#menu-list1 {
-    color: #FF2400;            /* initial highlight for Home */
+#menu-list1{
 }
-
 /*----------------------------------------MENU----------------------------------------*/
 /*----------------------------------------CONTAINER----------------------------------------*/
 .content-container{
@@ -88,7 +85,8 @@ header{
     justify-content: center;
     align-items: center;
     width: 86%;
-    height: auto;
+    max-width: 1600px;
+    height: 100%;
     margin: 0 auto;            /* <-- This centers the container itself */
 }
 
@@ -243,18 +241,8 @@ header{
 }
 
 #connect-copy{
-    width: 15px;
-    height: 15px;
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 5px;
-    object-fit: contain;
-    cursor: pointer;
-}
-
-#connect-copy{
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
     max-width: 100%;
     max-height: 100%;
     margin-left: 5px;
@@ -293,6 +281,268 @@ header{
     animation: scroll-left 10s linear infinite;
 }
 
+    /*----------------------------------------BACKGROUND CONTAINER----------------------------------------*/
+
+.background-container{
+    display: flex;
+    width: 86%;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: stretch;   /* make children equal height */
+}
+
+.education-container,
+.professional-container {
+    flex: 1;                /* both take up equal width */
+    display: flex;
+    flex-direction: column;
+}
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+.education-university{
+    display: flex;
+    margin: 2% 2% 1% 2%;
+}
+
+.university-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    width: 40%;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 4px #ff4500);
+}
+
+.university-logo img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.university-information{
+    width: 60%;
+    margin-left: 1%;
+    padding: 1%;
+    border: #7c7c7c solid 1px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 4px #ff4500);
+    background-color: #121212;
+}
+
+.university-information p{
+    padding-bottom: 2%;
+    padding-left: 2%;
+    width: 100%;
+    
+}
+
+.university-p1{
+    color: #9A9A9A;
+    font-size: .7rem;
+}
+
+.university-p2{
+    color: #EAEAEA;
+    font-size: 1rem;
+}
+
+.university-p3{
+    color: #9A9A9A;
+    text-align: right;
+    font-size: .8rem;
+}
+.education-languages{
+    list-style: none;   
+    width: auto;
+    margin: 1% 2% 2% 2%;
+    background: linear-gradient(to right, #ff4500, #FF2400);
+    border-radius: 10px;
+}
+
+.education-languages ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.education-languages li{
+    list-style: none;
+    color: #EAEAEA;
+    font-weight: 700;
+
+}
+
+.education-contacts{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 61%;
+    height: 100%;
+}
+
+.contacts-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50%;
+    margin: 0 3% 3% 3%;
+    border: #9A9A9A solid 1px;
+    border-radius: 10px;
+    background-color: #121212;
+    filter: drop-shadow(0 0 4px #ff4500);
+    cursor: pointer;
+}
+
+.contacts-email-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+
+}
+
+.contacts-email-img img{
+    width: 60%;
+    height: 60%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    
+}
+
+.contacts-email-p{
+    width: auto;
+    height: 50%;
+    text-align: center;
+}
+
+.contacts-resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 50%;
+    margin: 0 3% 3% 3%;
+    border: #9A9A9A solid 1px;
+    border-radius: 10px;
+    background-color: #121212;
+    filter: drop-shadow(0 0 4px #ff4500);
+    cursor: pointer;
+}
+
+.contacts-resume-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+
+}
+
+.contacts-resume-img img{
+    width: 60%;
+    height: 60%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    
+}
+
+.contacts-resume-p{
+    width: auto;
+    height: 50%;
+    text-align: center;
+}
+
+.education-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39%;
+    height: auto;
+    margin: 0 2% 2% 0;/*
+    border: #9A9A9A solid 1px;
+    border-radius: 10px;
+    background-color: #121212;
+    filter: drop-shadow(0 0 8px #ff4500);*/
+}
+
+.education-logo img{
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
+.professional-certificates{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    padding: 1% 0;
+}
+
+.certificates{
+    display: flex;
+    height: 25%;
+    margin: 1% 2%;
+    border-radius: 10px;
+    overflow: hidden;
+    filter: drop-shadow(0 0 4px #ff4500);
+    border: #9A9A9A solid 1px;
+}
+
+.certificates-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    background-color: #121212;
+}
+
+.certificates-badge img{
+    height: 90%;
+    width: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.certificates-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background-color: #121212;
+}
+
+.certificates-information p{
+    padding-left: 4%;
+}
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
+    /*----------------------------------------BACKGROUND CONTAINER----------------------------------------*/
 /*----------------------------------------CONTAINER----------------------------------------*/
 
 /*----------------------------------------@KEYFRAMES----------------------------------------*/
@@ -399,13 +649,44 @@ header{
     }
 
     #connect-copy{
-        width: 12px;
-        height: 12px;
+        width: .75rem;
+        height: .75rem;
     }
 
     .Divider h1{
         font-size: 12rem;
     }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+
+    .university-information{
+        margin-left: .5%;
+        padding: .5%;
+    }
+
+    .university-information p{
+        padding-bottom: 0%;
+        padding-left: 1%;
+        
+    }
+
+    .university-p1{
+        font-size: .50rem;
+    }
+
+    .university-p2{
+        font-size: .7rem;
+    }
+
+    .university-p3{
+        font-size: .60rem;
+    }
+
+    .education-languages ul{
+        padding: 1rem .5rem;
+        gap: 35px;
+        font-size: .8rem;
+    }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
 }
 
 @media (max-width: 1024px) {
@@ -473,14 +754,77 @@ header{
     }
 
     #connect-copy{
-        width: 12px;
-        height: 12px;
+        width: .75rem;
+        height: .75rem;
         margin-left: 3px;
     }
 
     .Divider h1{
         font-size: 12rem;
     }
+    /*----------------------------------------BACKGROUND CONTAINER----------------------------------------*/
+    .background-container{
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+    }
+    
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+    .university-information{
+        margin-left: 1%;
+        padding: 1%;
+    }
+
+    .university-information p{
+        padding-bottom: 2%;
+        padding-left: 2%;
+        
+    }
+
+    .university-p1{
+        font-size: .7rem;
+    }
+
+    .university-p2{
+        font-size: 1rem;
+    }
+
+    .university-p3{
+        font-size: .8rem;
+    }
+
+    .education-languages ul{
+        gap: 70px;
+        font-size: 1rem;
+    }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
+    .professional-certificates {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        padding: 0 2% 2% 2%;
+    }
+
+
+    .certificates{
+        width: auto;
+        height: 100%;
+        margin: 0%;
+    }
+
+    .certificates-badge{
+        width: 30%;
+        height: auto;
+    }
+
+    .certificates-information{
+        width: 100%;
+    }
+
+    .certificates-information p{
+        padding-left: 0%;
+    }
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
 }
 
 @media (max-width: 768px) {
@@ -532,8 +876,8 @@ header{
     }
 
     #connect-copy{
-        width: 10px;
-        height: 10px;
+        width: .6rem;
+        height: .6rem;
     }
 
     #connect-email{
@@ -542,6 +886,82 @@ header{
     .Divider h1{
         font-size: 8rem;
     }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+
+    .education-university{
+        display: flex;
+        flex-direction: column;
+        margin: 2% 2% 1% 2%;
+    }
+
+    .university-logo{
+        margin-right: 0%;
+        width: 100%;
+    }
+
+    .university-logo img{
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        margin-bottom: 2%;
+    }
+
+    .university-information{
+        width: auto;
+        text-align: center;
+        margin-left: 0%;
+        padding: 2%;
+    }
+
+    .university-information p{
+        padding-bottom: 0%;
+        padding-left: 0%;
+    }
+
+    .university-p1{
+        font-size: .48rem;
+    }
+
+    .university-p2{
+        font-size: .64rem;
+    }
+
+    .university-p3{
+        font-size: .54rem;
+    }
+
+    .education-languages ul{
+        gap: 38px;
+        font-size: .8rem;
+    }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
+    .professional-certificates {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns */
+        padding: 0 2% 2% 2%;
+    }
+
+
+    .certificates{
+        width: auto;
+        height: 100%;
+        margin: 0%;
+    }
+
+    .certificates-badge{
+        width: 30%;
+        height: auto;
+    }
+
+    .certificates-information{
+        width: 100%;
+    }
+
+    .certificates-information p{
+        padding-left: 0%;
+    }
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
 }
 
     
@@ -584,8 +1004,8 @@ header{
     }
     
     #connect-copy{
-        width: 8px;
-        height: 8px;
+        width: .5rem;
+        height: .5rem;
     }
 
     #connect-p{
@@ -599,4 +1019,81 @@ header{
     .Divider h1{
         font-size: 6rem;
     }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+
+    .education-university{
+        display: flex;
+        flex-direction: column;
+        margin: 2% 2% 1% 2%;
+    }
+
+    .university-logo{
+        margin-right: 0%;
+        width: 100%;
+    }
+
+    .university-logo img{
+        width: 20%;
+        height: 20%;
+        border-radius: 50%;
+        margin-bottom: 2%;
+    }
+
+    .university-information{
+        width: auto;
+        text-align: center;
+        margin-left: 0%;
+        padding: 2%;
+    }
+
+    .university-information p{
+        padding-bottom: 0%;
+        padding-left: 0%;
+    }
+
+    .university-p1{
+        font-size: .48rem;
+    }
+
+    .university-p2{
+        font-size: .64rem;
+    }
+
+    .university-p3{
+        font-size: .54rem;
+    }
+
+    .education-languages ul{
+        padding: .8rem;
+        gap: 20px;
+        font-size: .6rem;
+    }
+        /*----------------------------------------EDUCATION CONTAINER----------------------------------------*/
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
+    .professional-certificates {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+
+    .certificates{
+        width: auto;
+        height: 100%;
+        margin-bottom: 2%;
+    }
+
+    .certificates-badge{
+        width: 30%;
+        height: auto;
+    }
+
+    .certificates-information{
+        width: 100%;
+    }
+
+    .certificates-information p{
+        padding-left: 0%;
+    }
+        /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
 }
