@@ -1035,12 +1035,6 @@ header{
         margin: 2% 2% 1% 2%;
     }
 
-    .university-logo{
-    }
-
-    .university-logo img{
-    }
-
     .university-information{
         width: auto;
         text-align: center;
@@ -1097,3 +1091,4 @@ header{
     }
         /*----------------------------------------PROFESSIONAL CONTAINER----------------------------------------*/
 }
+
