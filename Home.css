@@ -326,8 +326,8 @@ header{
     width: 60%;
     margin-left: 1%;
     padding: 1%;
-    border: #7c7c7c solid 1px;
     border-radius: 10px;
+    border: #7c7c7c solid 1px;
     filter: drop-shadow(0 0 4px #ff4500);
     background-color: #121212;
 }
@@ -892,25 +892,33 @@ header{
         display: flex;
         flex-direction: column;
         margin: 2% 2% 1% 2%;
+        border-radius: 10px;
+        border: #9c9c9c solid 1px;
+        filter: drop-shadow(0 0 4px #ff4500);
+        background-color: #121212;
     }
 
     .university-logo{
-        margin-right: 0%;
+        margin: 2% 0 0 0;
         width: 100%;
     }
 
     .university-logo img{
-        width: 20%;
-        height: 20%;
+        width: 30%;
+        height: 30%;
         border-radius: 50%;
-        margin-bottom: 2%;
+        margin-bottom: 0%;
     }
 
     .university-information{
         width: auto;
         text-align: center;
         margin-left: 0%;
-        padding: 2%;
+        padding: 0 2% 2% 2%;
+        border-radius: 10px;
+        border: none;
+        filter: drop-shadow(0 0 0px #ff4500);
+        background-color: none;
     }
 
     .university-information p{
@@ -1028,22 +1036,14 @@ header{
     }
 
     .university-logo{
-        margin-right: 0%;
-        width: 100%;
     }
 
     .university-logo img{
-        width: 20%;
-        height: 20%;
-        border-radius: 50%;
-        margin-bottom: 2%;
     }
 
     .university-information{
         width: auto;
         text-align: center;
-        margin-left: 0%;
-        padding: 2%;
     }
 
     .university-information p{
